@@ -89,7 +89,7 @@ for i,filename in enumerate(filename_list):
     writer.writerows(skeleton_stats_list)
     file_out.close()
     print('skeleton_stats has been exported')
-# draw example skeleton and export to 'data'
+# draw example skeleton and export to 'data' folder
     from skan import draw
     fig, ax = plt.subplots()
     draw.overlay_skeleton_2d(channel2[6], skeleton[6], dilate=1, axes=ax);
